@@ -6,7 +6,7 @@ let lastId;
 let cur = [];
 
 window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
+  let fromTop = window.scrollY + 300;
 
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
