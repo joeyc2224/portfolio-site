@@ -79,10 +79,14 @@ section {
 }
 
 #about {
-    padding: 175px 0px 100px 0px;
+    padding: 200px 0px 125px 0px;
     flex-direction: column;
-    background-image: linear-gradient(to top, #064789 0%, #0e5caa 100%);
+    background-image: linear-gradient(to top, #064789 0%, #0e5caa 70%);
     color: #ebf2fa;
+
+    @media (max-width: 500px) {
+        padding: 150px 0px 125px 0px;
+    }
 }
 
 
@@ -90,7 +94,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 0px 20px;
+    margin: 0px 30px;
     max-width: 850px;
 }
 
@@ -102,7 +106,7 @@ section {
 }
 
 .name img {
-    width: 40px;
+    width: 42px;
     border-radius: 50%;
     border-width: 2px;
     border-color: #EBF2FA;
@@ -110,18 +114,20 @@ section {
 }
 
 .name p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .about-title {
-    font-size: 29px;
-
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .about-container .about-text {
-    font-size: 17px;
-    margin-top: -5px;
+    font-size: 16px;
+    margin-top: -8px;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .links {
@@ -140,7 +146,7 @@ section {
     padding: 10px 15px;
     border-radius: 20px;
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         font-size: 0px;
     }
 }
@@ -180,7 +186,7 @@ section {
 
 
 .timeline {
-    width: 80%;
+    width: 75%;
     height: auto;
     max-width: 1500px;
     margin: 0 auto;
@@ -195,7 +201,7 @@ section {
 .timeline ul li {
     padding: 20px;
     background-color: #064789;
-    color: #ebf2fa;
+    color: white;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -206,10 +212,9 @@ section {
 }
 
 .timeline-content h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    color: white;
 }
 
 .timeline-content h2 {
@@ -217,38 +222,35 @@ section {
     font-size: 16px;
     margin-top: 2px;
     margin-bottom: 6px;
-    color: white;
     line-height: 22px;
 }
 
 .timeline-content p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.65;
     font-weight: 300;
 }
 
 .link-div {
-    margin-top: 22px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 8px;
     margin-left: -3px;
 }
 
 .timeline-content a {
     border-radius: 20px;
     text-decoration: none;
-    /* background-color: #ebf2faf6; */
     padding: 8px 12px;
-    /* color: #064789f6; */
     color: #ebf2faf6;
     border: 2px solid #ebf2faf6;
     transition: font-size .3s;
-    font-weight: 600;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .timeline-content a:hover {
     background-color: rgba(255, 255, 255, 0.103);
-    font-size: 16.5px;
+    font-size: 15.5px;
 }
 
 .timeline-content .date {
@@ -273,6 +275,8 @@ section {
         width: 3px;
         height: 97%;
         background-color: #427AA1;
+        border-radius: 20px;
+        padding-bottom: 25px;
     }
 
     .timeline ul li {
@@ -330,7 +334,7 @@ section {
     }
 
     .timeline .end::before {
-        margin-top: 55px;
+        margin-top: 20px;
     }
 
 }
@@ -344,7 +348,7 @@ section {
 .project-container {
     display: grid;
     grid-template-columns: auto;
-    width: 85%;
+    width: 80%;
     column-gap: 25px;
     row-gap: 30px;
 
